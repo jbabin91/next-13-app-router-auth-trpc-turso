@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ['libsql'],
+  },
   reactStrictMode: true,
-  swcMinify: true,
 };
 
 export default nextConfig;
